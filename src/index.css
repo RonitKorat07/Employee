@@ -1,0 +1,40 @@
+  @import "tailwindcss";
+
+  @theme {
+    /* Primary Backgrounds */
+    --color-bgprimary: #0D0B21;     /* Deep Indigo */
+    --color-bgsecondary: #2F2B50;    /* Subtle Dark Purple */
+    --color-bgthird: #1E1B3A;
+
+    /* Text Colors */
+    --color-textprimary: #E0F7F4;       /* Soft Mint White ya original white */
+    --color-textsecondary: #C4C6DA;     /* Cool Gray lightdark gray*/
+    --color-textthird: #6B728E;         /* Dusty Indigo dark grey */ 
+
+    /* Borders / Lines */
+    --color-border: #3C3A60; 
+    --color-borderlight: #4E4C7A;
+
+    /* Accent / Brand Colors */
+    --color-light: #60F7D2;         /* Bright Aqua button me use hone vala */
+    --color-lighthover: #36EBC4;    /* Hover Aqua hover me  */
+    --color-accentalt: #A794F9;      /* Elegant Violet not use */
+    --color-accentmuted: #7C71D1;    /* Royal Indigo not use  */
+
+    /* Call to Action / Status */
+    --color-success: #34D399;        /* Green Mint */
+    --color-warning: #FBBF24;        /* Soft Yellow */
+    --color-error:   #F87171;        /* Coral Red */
+    --color-info:    #38BDF8;        /* Sky Blue */
+  }
+
+  @layer components {
+    .btn {
+      @apply w-full bg-light hover:bg-lighthover text-bgprimary font-semibold py-3 rounded-lg;
+    }
+
+    .input {
+      @apply w-full bg-bgthird text-textprimary placeholder-textthird p-3 rounded-lg mb-6 border border-borderlight  focus:ring-1;
+    }
+  }
+

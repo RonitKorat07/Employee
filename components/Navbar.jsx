@@ -19,14 +19,14 @@ const Navbar = () => {
                     </div>
          </div>
     
-        <ul className={`flex flex-col gap-1 sm:flex-row sm:gap-5 ${menuopen ? 'flex' : 'hidden'} sm:flex`}>
-        <li className='hover:text-lighthover cursor-pointer'>
+        <ul className={`flex flex-col gap-3 sm:flex-row sm:gap-5 ${menuopen ? 'flex' : 'hidden'} sm:flex`}>
+        <li className='hover:text-lighthover cursor-pointer' onClick={() => setmenuopen(false)} >
             <Link to="/"> Home </Link>
         </li>
-        <li className='hover:text-lighthover cursor-pointer'>
+        <li className='hover:text-lighthover cursor-pointer' onClick={() => setmenuopen(false)} >
             <Link to="/employee"> Employee </Link>
         </li>
-        <li className='hover:text-lighthover cursor-pointer'>
+        <li className='hover:text-lighthover cursor-pointer' onClick={() => setmenuopen(false)} >
             <Link to="/contact"> Contact </Link>
         </li>
          </ul>
